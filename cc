@@ -28,7 +28,7 @@ getgenv().criv = {
             'Wall', 'Knocked', 'Grabbed', 'Vehicle'
         },
         ['Fov'] = {
-            ['Show Fov'] = false, -- true = show FOV circle, false = hide
+            ['Show Fov'] = false,
             ['Size'] = {
                 ['X'] = 45,
                 ['Y'] = 45,
