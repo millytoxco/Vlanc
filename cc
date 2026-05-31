@@ -1,4 +1,5 @@
 script_key=""; ---- put your key in there
+
 getgenv().criv = {
     ['Core'] = {
         ['Version'] = 'v1.0',
@@ -89,6 +90,14 @@ getgenv().criv = {
                 ['ToggleMovement'] = 'V',
                 ['Speed +5'] = 'M',
                 ['Speed -5'] = 'N'
+            },
+            ['Jump Boost'] = {
+                ['Enabled'] = true,
+                ['Default'] = 50,
+                ['Keybinds'] = {
+                    ['Jump +5'] = 'J',
+                    ['Jump -5'] = 'K'
+                }
             }
         }
     },
