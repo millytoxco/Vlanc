@@ -28,6 +28,7 @@ getgenv().criv = {
             'Wall', 'Knocked', 'Grabbed', 'Vehicle'
         },
         ['Fov'] = {
+            ['Show Fov'] = false, -- true = show FOV circle, false = hide
             ['Size'] = {
                 ['X'] = 45,
                 ['Y'] = 45,
@@ -49,6 +50,7 @@ getgenv().criv = {
             ['Parts'] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
         },
         ['Fov'] = {
+            ['Show Fov'] = false, -- true = show FOV circle, false = hide
             ['Size'] = {
                 ['X'] = 25,
                 ['Y'] = 25,
@@ -70,6 +72,7 @@ getgenv().criv = {
             ['Keybind Mode'] = 'Toggle'
         },
         ['Fov'] = {
+            ['Show Fov'] = false, -- true = show FOV circle, false = hide
             ['Size'] = {
                 ['X'] = 25,
                 ['Y'] = 25,
@@ -133,4 +136,5 @@ getgenv().criv = {
         },
     },
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1cf983bd1f4aac54ecaba25091bb81c0.lua"))()
