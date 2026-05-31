@@ -3,7 +3,7 @@ getgenv().criv = {
     ['Core'] = {
         ['Version'] = 'v1.0',
         ['Target Selector'] = {
-            ['Mode'] = 'Automatic',
+            ['Target Mode'] = 'Manual',
             ['Select Key'] = 'Q'
         },
         ['Target Display'] = {
@@ -28,11 +28,11 @@ getgenv().criv = {
             'Wall', 'Knocked', 'Grabbed', 'Vehicle'
         },
         ['Fov'] = {
-            ['Show Fov'] = false,
+            ['Show Fov'] = false, -- true = show FOV circle, false = hide
             ['Size'] = {
-                ['X'] = 45,
-                ['Y'] = 45,
-                ['Z'] = 45
+                ['X'] = 450,
+                ['Y'] = 450,
+                ['Z'] = 450
             }
         }
     },
@@ -80,12 +80,6 @@ getgenv().criv = {
             },
         },
     },
-    ['Range'] = {
-        ['Enabled'] = true,
-        ['Silent Aim'] = 250,
-        ['Camera Aimbot'] = 250,
-        ['Trigger Bot'] = 250
-    },
     ['Speed Modifications'] = {
         ['Options'] = {
             ['Enabled'] = true,
@@ -110,31 +104,52 @@ getgenv().criv = {
             '[TacticalShotgun]',
         },
     },
+    ['Spread Modification'] = {
+        ['Enabled'] = true,
+        ['Guns'] = {
+            ['[Double-Barrel SG]'] = 0,
+            ['[TacticalShotgun]'] = 0,
+        },
+    },
     ['ESP'] = {
         ['Enabled'] = true,
         ['Team Check'] = false,
         ['Max Distance'] = 1000,
         ['Names'] = {
             ['Enabled'] = true,
-            ['Color'] = {255, 255, 255},
         },
         ['Boxes'] = {
             ['Enabled'] = true,
-            ['Color'] = {255, 255, 255},
         },
         ['Tracers'] = {
             ['Enabled'] = false,
             ['Origin'] = 'Bottom',
-            ['Color'] = {255, 255, 255},
         },
         ['Health Bar'] = {
             ['Enabled'] = true,
         },
         ['Distance'] = {
             ['Enabled'] = false,
-            ['Color'] = {200, 200, 200},
+        },
+    },
+    ['Hitbox Expander'] = {
+        ['Enabled'] = true,
+        ['Size'] = {
+            ['X'] = 5,
+            ['Y'] = 5,
+            ['Z'] = 5,
+        },
+    },
+    ['Skin Changer'] = {
+        ['Enabled'] = false,
+        ['Skins'] = {
+            ['[Double-Barrel SG]'] = 'Galaxy',
+            ['[Revolver]'] = 'Galaxy',
+            ['[TacticalShotgun]'] = 'Galaxy',
+            ['[Knife]'] = 'GPO-Knife',
         },
     },
 }
+
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1cf983bd1f4aac54ecaba25091bb81c0.lua"))()
