@@ -31,16 +31,16 @@ getgenv().criv = {
         ['Fov'] = {
             ['Show Fov'] = false, -- true = show FOV circle, false = hide
             ['Size'] = {
-                ['X'] = 450,
-                ['Y'] = 450,
-                ['Z'] = 450
+                ['X'] = 45,
+                ['Y'] = 45,
+                ['Z'] = 45
             }
         }
     },
     ['Camera Aimbot'] = {
         ['Enabled'] = false,
         ['Smoothness'] = 0.123,
-        ['Bind'] = 'Q',
+        ['Bind'] = 'C',
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
@@ -105,13 +105,22 @@ getgenv().criv = {
         ['Enabled'] = true,
         ['Toggle Key'] = "H",
         ['Delay'] = 0.12,
-        ['Bypass Cooldown'] = false,
-        ['All Weapons'] = false,
+        ['Bypass Cooldown'] = true,
+        ['All Weapons'] = true,
         ['Weapons'] = {
             '[Revolver]',
             '[Double-Barrel SG]',
             '[TacticalShotgun]',
         },
+    },
+    ['Auto Buy Armor'] = {
+        ['Enabled'] = true,
+        ['Bind'] = 'B',
+    },
+    ['Da Hood First Person Macro'] = {
+        ['Enabled'] = true,
+        ['Bind'] = 'X',
+        ['Delay'] = 0.1,
     },
     ['Spread Modification'] = {
         ['Enabled'] = true,
@@ -142,12 +151,22 @@ getgenv().criv = {
         },
     },
     ['Hitbox Expander'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = true, -- aim-only: bigger target in silent aim, no visible body resize
         ['Size'] = {
-            ['X'] = 5,
-            ['Y'] = 5,
-            ['Z'] = 5,
+            ['X'] = 500,
+            ['Y'] = 500,
+            ['Z'] = 500,
         },
+    },
+    ['Range Extender'] = {
+        ['Enabled'] = true,
+        ['Ignore Walls'] = true,
+        ['Distance'] = 0, -- studs; 0 = no distance cap on targeting
+        ['Off Screen'] = true,
+        ['All Weapons'] = true,
+        ['Silent Aim'] = true,
+        ['Trigger Bot'] = true,
+        ['Camera Aimbot'] = true,
     },
     ['Skin Changer'] = {
         ['Enabled'] = false,
@@ -159,6 +178,5 @@ getgenv().criv = {
         },
     },
 }
-
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1cf983bd1f4aac54ecaba25091bb81c0.lua"))()
