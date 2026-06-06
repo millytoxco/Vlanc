@@ -157,9 +157,9 @@ getgenv().criv = {
     ['Hitbox Expander'] = {
         ['Enabled'] = true,
         ['Size'] = {
-            ['X'] = 5000,
-            ['Y'] = 5000,
-            ['Z'] = 5000,
+            ['X'] = 5,
+            ['Y'] = 5,
+            ['Z'] = 5,
         },
     },
     ['Range Extender'] = {
