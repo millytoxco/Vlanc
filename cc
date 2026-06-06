@@ -123,8 +123,9 @@ getgenv().criv = {
     },
     ['Da Hood First Person Macro'] = {
         ['Enabled'] = true,
-        ['Bind'] = 'X',
-        ['Delay'] = 0.1,
+        ['Bind'] = 'G',
+        ['Delay'] = 0.03,
+        ['Bypass Cooldown'] = true,
     },
     ['Spread Modification'] = {
         ['Enabled'] = true,
@@ -182,5 +183,4 @@ getgenv().criv = {
         },
     },
 }
-
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1cf983bd1f4aac54ecaba25091bb81c0.lua"))()
