@@ -11,6 +11,9 @@ getgenv().criv = {
             ['Panel Enabled'] = true,
             ['Name ESP'] = true
         },
+        ['Keybind List'] = {
+            ['Enabled'] = true,
+        },
     },
     ['Silent Aim'] = {
         ['Enabled'] = true,
@@ -21,10 +24,7 @@ getgenv().criv = {
             ['Y'] = 0,
             ['Z'] = 0
         },
-        ['Hit Loaction'] = {
-            ['Type'] = 'Closest Point',
-            ['Parts'] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
-        },
+        ['Aim At'] = 'Head',
         ['Checks'] = {
             'Wall', 'Knocked', 'Grabbed', 'Vehicle'
         },
@@ -60,7 +60,7 @@ getgenv().criv = {
         },
     },
     ['Trigger Bot'] = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Mode'] = 'Target',
         ['Delay'] = 0,
         ['Prediction'] = {
@@ -69,7 +69,7 @@ getgenv().criv = {
             ['Z'] = 0,
         },
         ['Keybind'] = {
-            ['Bind'] = 'T', 
+            ['Bind'] = '', 
             ['Keybind Mode'] = 'Toggle'
         },
         ['Fov'] = {
@@ -117,6 +117,10 @@ getgenv().criv = {
         ['Enabled'] = true,
         ['Bind'] = 'B',
     },
+    ['Auto Buy Stim'] = {
+        ['Enabled'] = true,
+        ['Bind'] = 'G',
+    },
     ['Da Hood First Person Macro'] = {
         ['Enabled'] = true,
         ['Bind'] = 'X',
@@ -132,7 +136,7 @@ getgenv().criv = {
     ['ESP'] = {
         ['Enabled'] = true,
         ['Team Check'] = false,
-        ['Max Distance'] = 1000,
+        ['Max Distance'] = 1000000,
         ['Names'] = {
             ['Enabled'] = true,
         },
@@ -151,11 +155,11 @@ getgenv().criv = {
         },
     },
     ['Hitbox Expander'] = {
-        ['Enabled'] = true, -- aim-only: bigger target in silent aim, no visible body resize
+        ['Enabled'] = true,
         ['Size'] = {
-            ['X'] = 500,
-            ['Y'] = 500,
-            ['Z'] = 500,
+            ['X'] = 5000,
+            ['Y'] = 5000,
+            ['Z'] = 5000,
         },
     },
     ['Range Extender'] = {
