@@ -1,5 +1,6 @@
 script_key=""; ---- put your key in there
 
+
 getgenv().criv = {
     ['Core'] = {
         ['Version'] = 'v1.0',
@@ -31,9 +32,9 @@ getgenv().criv = {
         ['Fov'] = {
             ['Show Fov'] = false, -- true = show FOV circle, false = hide
             ['Size'] = {
-                ['X'] = 45,
-                ['Y'] = 45,
-                ['Z'] = 45
+                ['X'] = 4500,
+                ['Y'] = 4500,
+                ['Z'] = 4500
             }
         }
     },
@@ -61,24 +62,30 @@ getgenv().criv = {
     },
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Mode'] = 'Target',
+        ['Mode'] = 'Automatic', -- Automatic / Target
         ['Delay'] = 0,
+        ['Max Distance'] = 250000000,
+        ['Radius'] = 200,
+        ['Bypass Cooldown'] = true,
         ['Prediction'] = {
-            ['X'] = 0,
-            ['Y'] = 0,
-            ['Z'] = 0,
+            ['Enabled'] = false,
+            ['Scale'] = 0.13,
         },
         ['Keybind'] = {
-            ['Bind'] = '', 
-            ['Keybind Mode'] = 'Toggle'
+            ['Bind'] = 'X',
+            ['Keybind Mode'] = 'Toggle', -- Toggle / Hold
         },
+        ['Target Key'] = 'Q',
         ['Fov'] = {
-            ['Show Fov'] = false, -- true = show FOV circle, false = hide
+            ['Show Fov'] = false,
             ['Size'] = {
-                ['X'] = 25,
-                ['Y'] = 25,
-                ['Z'] = 25,
+                ['X'] = 3.3,
+                ['Y'] = 7,
+                ['Z'] = 3.6,
             },
+        },
+        ['Checks'] = {
+            'Knocked', 'Knife'
         },
     },
     ['Speed Modifications'] = {
@@ -104,7 +111,7 @@ getgenv().criv = {
     ['Rapid Fire'] = {
         ['Enabled'] = true,
         ['Toggle Key'] = "H",
-        ['Delay'] = 0.12,
+        ['Delay'] = 0,
         ['Bypass Cooldown'] = true,
         ['All Weapons'] = true,
         ['Weapons'] = {
@@ -121,12 +128,6 @@ getgenv().criv = {
         ['Enabled'] = true,
         ['Bind'] = 'G',
     },
-    ['Da Hood First Person Macro'] = {
-        ['Enabled'] = true,
-        ['Bind'] = 'G',
-        ['Delay'] = 0.03,
-        ['Bypass Cooldown'] = true,
-    },
     ['Spread Modification'] = {
         ['Enabled'] = true,
         ['Guns'] = {
@@ -137,7 +138,6 @@ getgenv().criv = {
     ['ESP'] = {
         ['Enabled'] = true,
         ['Team Check'] = false,
-        ['Max Distance'] = 1000000,
         ['Names'] = {
             ['Enabled'] = true,
         },
@@ -172,6 +172,9 @@ getgenv().criv = {
         ['Silent Aim'] = true,
         ['Trigger Bot'] = true,
         ['Camera Aimbot'] = true,
+    },
+    ['Wallbang'] = {
+        ['Enabled'] = true
     },
     ['Skin Changer'] = {
         ['Enabled'] = false,
