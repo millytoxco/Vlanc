@@ -1,6 +1,7 @@
 script_key=""; ---- put your key in there
 
 
+
 getgenv().criv = {
     ['Core'] = {
         ['Version'] = 'v1.0',
@@ -60,34 +61,6 @@ getgenv().criv = {
             }
         },
     },
-    ['Trigger Bot'] = {
-        ['Enabled'] = true,
-        ['Mode'] = 'Automatic', -- Automatic / Target
-        ['Delay'] = 0,
-        ['Max Distance'] = 250000000,
-        ['Radius'] = 200,
-        ['Bypass Cooldown'] = true,
-        ['Prediction'] = {
-            ['Enabled'] = false,
-            ['Scale'] = 0.13,
-        },
-        ['Keybind'] = {
-            ['Bind'] = 'X',
-            ['Keybind Mode'] = 'Toggle', -- Toggle / Hold
-        },
-        ['Target Key'] = 'Q',
-        ['Fov'] = {
-            ['Show Fov'] = false,
-            ['Size'] = {
-                ['X'] = 3.3,
-                ['Y'] = 7,
-                ['Z'] = 3.6,
-            },
-        },
-        ['Checks'] = {
-            'Knocked', 'Knife'
-        },
-    },
     ['Speed Modifications'] = {
         ['Options'] = {
             ['Enabled'] = true,
@@ -111,7 +84,7 @@ getgenv().criv = {
     ['Rapid Fire'] = {
         ['Enabled'] = true,
         ['Toggle Key'] = "H",
-        ['Delay'] = 0,
+        ['Delay'] = 0.000000001,
         ['Bypass Cooldown'] = true,
         ['All Weapons'] = true,
         ['Weapons'] = {
@@ -136,7 +109,7 @@ getgenv().criv = {
         },
     },
     ['ESP'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Team Check'] = false,
         ['Names'] = {
             ['Enabled'] = true,
@@ -157,11 +130,7 @@ getgenv().criv = {
     },
     ['Hitbox Expander'] = {
         ['Enabled'] = true,
-        ['Size'] = {
-            ['X'] = 5,
-            ['Y'] = 5,
-            ['Z'] = 5,
-        },
+        ['Size'] = 7,
     },
     ['Range Extender'] = {
         ['Enabled'] = true,
@@ -170,11 +139,38 @@ getgenv().criv = {
         ['Off Screen'] = true,
         ['All Weapons'] = true,
         ['Silent Aim'] = true,
-        ['Trigger Bot'] = true,
         ['Camera Aimbot'] = true,
     },
     ['Wallbang'] = {
         ['Enabled'] = true
+    },
+    ['Trigger Bot'] = {
+        ['Enabled'] = true,
+        ['Max Range'] = 500,
+        ['Bind'] = 'T',
+        ['Mode'] = {
+            ['Type'] = 'Keybind',
+            ['Keybind Mode'] = 'Always', -- Always, Hold, Toggle
+            ['Mouse Button'] = 'MouseButton2',
+        },
+        ['Settings'] = {
+            ['Type'] = 'Hitbox', -- Hitbox or Raycast
+        },
+        ['Delay Settings'] = {
+            ['Delay Toggle'] = true,
+            ['Delay'] = 0,
+        },
+        ['Hitbox'] = {
+            ['Show Hitbox'] = false,
+            ['Size'] = {
+                ['X Left'] = 4,
+                ['X Right'] = 4,
+                ['Y Upper'] = 4,
+                ['Y Lower'] = 4,
+                ['Z Left'] = 4,
+                ['Z Right'] = 4,
+            },
+        },
     },
     ['Skin Changer'] = {
         ['Enabled'] = false,
