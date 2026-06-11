@@ -2,6 +2,7 @@ script_key=""; ---- put your key in there
 
 
 
+
 getgenv().criv = {
     ['Core'] = {
         ['Version'] = 'v1.0',
@@ -33,9 +34,9 @@ getgenv().criv = {
         ['Fov'] = {
             ['Show Fov'] = false, -- true = show FOV circle, false = hide
             ['Size'] = {
-                ['X'] = 4500,
-                ['Y'] = 4500,
-                ['Z'] = 4500
+                ['X'] = 45,
+                ['Y'] = 45,
+                ['Z'] = 45
             }
         }
     },
@@ -129,7 +130,7 @@ getgenv().criv = {
         },
     },
     ['Hitbox Expander'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Size'] = 7,
     },
     ['Range Extender'] = {
@@ -142,7 +143,7 @@ getgenv().criv = {
         ['Camera Aimbot'] = true,
     },
     ['Wallbang'] = {
-        ['Enabled'] = true
+        ['Enabled'] = false
     },
     ['Trigger Bot'] = {
         ['Enabled'] = true,
