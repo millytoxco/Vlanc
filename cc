@@ -7,7 +7,7 @@ getgenv().criv = {
     ['Core'] = {
         ['Version'] = 'v1.0',
         ['Target Selector'] = {
-            ['Target Mode'] = 'Manual',
+            ['Target Mode'] = 'Manual', -- test nigger boy
             ['Select Key'] = 'Q'
         },
         ['Target Display'] = {
