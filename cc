@@ -12,11 +12,11 @@ getgenv().criv = {
         },
         ['Target Display'] = {
             ['Panel Enabled'] = true,
-            ['Name ESP'] = true
         },
-        ['Keybind List'] = {
-            ['Enabled'] = true,
-        },
+    },
+    ['Target Line'] = {
+        ['Enabled'] = true,
+        ['Color'] = {255, 255, 255},
     },
     ['Silent Aim'] = {
         ['Enabled'] = true,
@@ -42,19 +42,30 @@ getgenv().criv = {
     },
     ['Camera Aimbot'] = {
         ['Enabled'] = false,
-        ['Smoothness'] = 0.123,
         ['Bind'] = 'C',
+        ['Distance'] = 450,
+        ['Smoothness'] = 0.159,
+        ['Easing'] = {
+            ['Style'] = 'Sine',
+            ['Direction'] = 'InOut',
+        },
+        ['Hit Part'] = 'Head',
+        ['Closest Point'] = {
+            ['Mode'] = 'Regular',
+            ['Scale'] = 1,
+        },
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
-            ['Z'] = 0
+            ['Z'] = 0,
+            ['Clamp Y Axis'] = {
+                ['Override'] = 'Full', -- Full, Partial, None
+            },
         },
-        ['Hit Loaction'] = {
-            ['Type'] = 'Closest Point',
-            ['Parts'] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
-        },
+        ['Sticky Aim'] = true,
+        ['Checks'] = {'Wall', 'Knocked', 'Grabbed', 'Vehicle'},
         ['Fov'] = {
-            ['Show Fov'] = false, -- true = show FOV circle, false = hide
+            ['Show Fov'] = false,
             ['Size'] = {
                 ['X'] = 25,
                 ['Y'] = 25,
@@ -111,6 +122,10 @@ getgenv().criv = {
     },
     ['ESP'] = {
         ['Enabled'] = false,
+        ['Color'] = {255, 255, 255}, -- RGB table, or hex like "#00FFAA"
+        ['Name ESP'] = {
+            ['Enabled'] = true,
+        },
         ['Team Check'] = false,
         ['Names'] = {
             ['Enabled'] = true,
@@ -132,9 +147,10 @@ getgenv().criv = {
     ['Hitbox Expander'] = {
         ['Enabled'] = false,
         ['Size'] = 7,
+        ['Link'] = false, -- true = only expand hitbox on your current target
     },
     ['Range Extender'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Ignore Walls'] = true,
         ['Distance'] = 0, -- studs; 0 = no distance cap on targeting
         ['Off Screen'] = true,
@@ -146,7 +162,7 @@ getgenv().criv = {
         ['Enabled'] = false
     },
     ['Trigger Bot'] = {
-        ['Enabled'] = true,
+        ['Enabled'] = false,
         ['Max Range'] = 500,
         ['Bind'] = 'T',
         ['Mode'] = {
